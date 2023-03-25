@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Feature", glue = "Steps", tags = "@tag", plugin = { "pretty",
+@CucumberOptions(features = "target/Feature", glue = "Steps", tags = "@tag", plugin = { "pretty",
 		"html:target/flashcode.html" }, monochrome = true, dryRun = false)
 
 public class Runner {
